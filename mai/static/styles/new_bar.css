@@ -1,0 +1,47 @@
+.new_bar{
+    display: flex;
+    background-color: rgb(46, 45, 46);
+}
+
+.nav_list{
+    display:flex;
+}
+
+.nav_list a{
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    color: rgb(226, 0, 117);
+}
+
+.nav_list a:hover{
+    background-color: blue;
+}
+
+.new_btn{
+    display: none;
+}
+
+@media(max-width: 1000px){
+    .new_btn{
+        font-size: 2em;
+        padding-inline: 10px ;
+        padding-bottom: 2px;
+        border: none;
+        background-color: rgb(46, 45, 46);
+        color: white;
+        display: block;
+        cursor: pointer;
+    }
+    .nav_list{
+        display:none;
+    }
+    .drop:hover .nav_list{
+        display: block;
+        position: absolute;
+        background-color: rgb(46, 45, 46);
+    }
+    .new_bar{
+        justify-content: space-between;
+    }
+}
